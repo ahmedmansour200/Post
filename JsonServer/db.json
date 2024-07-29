@@ -1,0 +1,236 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "userName": "ahmed",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "userName": "faris",
+      "password": "123"
+    },
+    {
+      "id": "3",
+      "userName": "mohamed",
+      "password": "123"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 1",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "1"
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 2",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "1"
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 3",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "1"
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 4",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "1"
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 5",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "1"
+    },
+    {
+      "id": "6",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 6",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "1"
+    },
+    {
+      "id": "7",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 7",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "1"
+    },
+    {
+      "id": "1",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 8",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "2"
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 9",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "2"
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 10",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "2"
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 11",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "2"
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 12",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "2"
+    },
+    {
+      "id": "6",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 13",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "2"
+    },
+    {
+      "id": "7",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 14",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "2"
+    },
+    {
+      "id": "8",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 15",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "2"
+    },
+    {
+      "id": "1",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 16",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 17",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 18",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 19",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 20",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "6",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 21",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "7",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 22",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "8",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 23",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "9",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 24",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "10",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 25",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "11",
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp",
+      "altText": "Movie",
+      "title": "Movie Title 26",
+      "description": "Click the button to watch on Jetflix app.",
+      "userID": "3"
+    },
+    {
+      "id": "d052",
+      "imageUrl": "https://images.pexels.com/photos/17266857/pexels-photo-17266857/free-photo-of-vase-with-flowers-and-cup-of-coffee.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+      "title": "thepost",
+      "description": "sixojscxsxhagiafyaguxn",
+      "userId": 1
+    }
+  ]
+}
