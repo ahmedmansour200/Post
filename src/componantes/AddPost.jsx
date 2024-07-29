@@ -5,11 +5,11 @@ export default function AddPost({ onAdd }) {
   const [imageUrl, setImageUrl] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [userId, setUserId] = useState(1);
+  const [userID, setUserID] = useState(1);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const newPost = { imageUrl,title, description, userId };
+    const newPost = { imageUrl,title, description, userID };
 
     try {
       const response = await fetch('http://localhost:3000/posts', {
@@ -26,7 +26,7 @@ export default function AddPost({ onAdd }) {
         setImageUrl('');
         setTitle('');
         setDescription('');
-        setUserId(1);
+        setUserID(1);
       } else {
         console.error('Error creating post');
       }
