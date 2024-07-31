@@ -2,6 +2,7 @@
 import Navbar from './Navbar'
 import CardPost from './CardPostUser'
 import PlusIcone from './icon/PlusIcone'
+import { Link } from 'react-router-dom'
 
 export default function Home({posts , users}) {
 
@@ -21,9 +22,9 @@ export default function Home({posts , users}) {
       ))}
     </div>
     <div>
-    <button className="btn btn-square fixed  bottom-4 right-4">
+    <Link to='/addpost' className="btn btn-square fixed  bottom-4 right-4">
   <PlusIcone/>
-</button>
+</Link>
     </div>
     </div>
   )
