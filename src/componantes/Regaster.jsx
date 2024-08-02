@@ -3,7 +3,7 @@ import UserNameIcon from './icon/UserNameIcon'
 import PasswordIcon from './icon/PasswordIcon'
 import { useNavigate } from 'react-router-dom';
 
-export default function Regaster() {
+export default function Regaster({users , setUser}) {
 const [userName , setUserName] = useState('');
 const [password , setPassword] = useState('');
 
@@ -20,8 +20,13 @@ function handleSubmit(e) {
         body: JSON.stringify(formData)
     })
     .then(res => res.json())
-    .then(data => console.log(data))
-    navigate('/');
+    .then(data => {
+      window.sessionStorage.setItem('userID' , data.id);
+      setUser(data.id)
+    }
+    )
+
+    navigate('/');  
 }
 
 function handleChange(e) {

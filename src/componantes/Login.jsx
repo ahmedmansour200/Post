@@ -6,33 +6,28 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Bounce, Slide, toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function Login() {
-const [users , setUsers] = useState('');
+export default function Login({users , setUser}) {
 const navigate = useNavigate();
   const [formData, setFormData] = useState({
     password: '', // required
     username: '' // optional
 })
 
-async function getUser(){
-  await fetch('http://localhost:3000/users', {
-    method: 'GET',
-    headers: {'Content-Type' : 'application/json'}
-})
-.then(res => res.json())
-.then(data => setUsers(data))
 
-}
-useEffect(() => {
-  getUser();
-},[users])
+
+
 function handleSubmit(e) {
     e.preventDefault()
    
  let user = users.find((user)=> user.username == formData.username && user.password == formData.password)
+ console.log(user);
+ 
 if (user) {
-  navigate('/' , {state: user});
-  location.reload();
+  window.sessionStorage.setItem('userID' , user.id)
+  setUser(user.id)
+  
+  navigate('/' );
+  // location.reload();
 } else {
 
   console.error("invalid email or password")

@@ -1,8 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import {Bounce, toast } from 'react-toastify';
 
 export default function EditPost({ postId,  onUpdate }) {
-  console.log(postId);
+  const notify = () => {
+    toast.success('Ok Edit Post'
+      , {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
+  };
   const [imageUrl, setImageUrl] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -25,7 +39,7 @@ export default function EditPost({ postId,  onUpdate }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const updatedPost = { title, description , imageUrl , userID};
-
+    notify();
     try {
       const response = await fetch(`http://localhost:3000/posts/${postId}`, {
         method: 'PUT',
