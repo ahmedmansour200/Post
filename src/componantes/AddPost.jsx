@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Bounce, toast, ToastContainer } from 'react-toastify';
+import { Bounce, toast } from 'react-toastify';
 export default function AddPost({ onAdd , logUserID}) {
 
   const [imageUrl, setImageUrl] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  // const [userID, setUserID] = useState(1);
   const navigate = useNavigate();
   const notify = () => {
     toast.success('Ok add Post'
@@ -23,12 +22,15 @@ export default function AddPost({ onAdd , logUserID}) {
     });
   };
   
+  console.log(logUserID);
   
   const handleSubmit = async (e) => {
     e.preventDefault();
     let userID = +logUserID;
+    console.log(logUserID);
+    
     const newPost = { imageUrl, title, description , userID};
-    notify();
+    // notify();
     try {
       const response = await fetch('http://localhost:3000/posts', {
         method: 'POST',
@@ -45,7 +47,6 @@ export default function AddPost({ onAdd , logUserID}) {
         setImageUrl('');
         setTitle('');
         setDescription('');
-        // setUserID()
       } else {
         console.error('Error creating post');
       }

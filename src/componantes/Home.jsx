@@ -44,7 +44,7 @@ export default function Home({ users, auth, logOut , setPost , setUser , logUser
       });
 
       if (response.ok) {
-        notify()
+        // notify()
         setPosts(posts.filter(post => post.id !== postId));
       } else {
         console.error('Error deleting post');

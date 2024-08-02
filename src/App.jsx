@@ -67,7 +67,7 @@ function App() {
   <Route path="/" element={<Home  setUser={setUser} logOut={logOut} setPost={setEditingPostId}
    posts={posts} users={usersName} auth={auth} logUserID={logUserID}/>}></Route>
     <Route path="/login" element={<Login setUser={setUser} users={users}/>}></Route>
-    <Route path='/regaster' element={<Regaster setUser={setUser}/>}/>
+    <Route path='/register' element={<Regaster setUser={setUser}/>}/>
     <Route path='/edit' element={<EditPost 
      postId={editingPostId} onUpdate={handleUpdatePost}/>}/>
     <Route path="/addpost" element={<AddPost logUserID={logUserID}
