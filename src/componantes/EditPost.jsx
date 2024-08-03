@@ -4,7 +4,7 @@ import {Bounce, toast } from 'react-toastify';
 
 export default function EditPost({ postId,  onUpdate }) {
   const notify = () => {
-    toast.success('Ok Edit Post'
+    toast.success('Edit Post'
       , {
       position: "top-center",
       autoClose: 5000,
@@ -62,23 +62,28 @@ export default function EditPost({ postId,  onUpdate }) {
   };
 
 return (
-
-<form onSubmit={handleSubmit} class="max-w-sm mx-auto mt-40">
-  <div class="mb-5">
-    <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
-    <input type="text"  value={title} onChange={(e) => setTitle(e.target.value)} id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="title" required />
-  </div>
-  <div class="mb-5">
-    <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Body</label>
-    <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} id="description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder='body' required />
-  </div>
-  <div class="mb-5">
-    <label for="imagedUrl" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Imag URL</label>
-    <input type="text" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} id="imagedUrl" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
-  </div>
   
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-</form>
-
+  <div className='bg-gray-100 flex items-center justify-center h-screen'>
+  <div className=" bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+<h1 className="text-2xl font-bold mb-4">Add Post</h1>
+  <form onSubmit={handleSubmit}>
+    <div className="mb-4">
+      <label for="title" className="block text-gray-700 text-sm font-bold mb-2">Title</label>
+      <input type="text"  value={title} onChange={(e) => setTitle(e.target.value)} id="title" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Please enter title" required />
+    </div>
+    <div className="mb-4">
+      <label for="description" className="block text-sm text-gray-700 font-bold mb-2 ">Body</label>
+      <textarea  rows={5} value={description} onChange={(e) => setDescription(e.target.value)} id="description" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder='Pleas enter body' required />
+    </div>
+    <div className="mb-4">
+      <label for="imagedUrl" className="block text-gray-700 text-sm font-bold mb-2">Imag URL</label>
+      <input type="text" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} id="imagedUrl" placeholder='Please enter url image' className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+    </div>
+    <div className="flex items-center justify-between">
+    <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
+  </div>
+  </form>
+  </div>
+  </div>
   )
 }

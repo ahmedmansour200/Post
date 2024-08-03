@@ -11,7 +11,7 @@ import { Bounce, toast } from 'react-toastify'
 export default function Home({ users, auth, logOut , setPost , setUser , logUserID}) {
   const [posts, setPosts] = useState([]);
   const notify = () => {
-    toast.error('OK Delete post'
+    toast.error('Delete post'
       , {
       position: "top-center",
       autoClose: 5000,

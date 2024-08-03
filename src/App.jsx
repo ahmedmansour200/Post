@@ -8,10 +8,7 @@ import Regaster from './componantes/Regaster'
 import EditPost from './componantes/EditPost'
 import { ToastContainer } from 'react-toastify'
 
-
-
 function App() {
-
   const [posts, setPosts] = useState([]);
   const [usersName, setUsersName] = useState({});
   const [users, setUsers] = useState({});
