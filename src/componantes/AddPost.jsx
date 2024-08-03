@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Bounce, toast, ToastContainer } from 'react-toastify';
-export default function AddPost({ onAdd , logUserID}) {
+export default function AddPost({ onAdd , userID}) {
 
   const [imageUrl, setImageUrl] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  // const [userID, setUserID] = useState(1);
   const navigate = useNavigate();
   const notify = () => {
     toast.success('Ok add Post'
@@ -22,11 +21,10 @@ export default function AddPost({ onAdd , logUserID}) {
       transition: Bounce,
     });
   };
-  
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let userID = +logUserID;
+    
     const newPost = { imageUrl, title, description , userID};
     notify();
     try {
@@ -45,7 +43,6 @@ export default function AddPost({ onAdd , logUserID}) {
         setImageUrl('');
         setTitle('');
         setDescription('');
-        // setUserID()
       } else {
         console.error('Error creating post');
       }

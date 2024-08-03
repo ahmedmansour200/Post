@@ -4,15 +4,12 @@ import CardPostUser from './CardPostUser'
 import CardPost from './CardPost'
 
 import PlusIcone from './icon/PlusIcone'
-import { Link, useLocation } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { Bounce, toast } from 'react-toastify'
 
 export default function Home({ users, auth, logOut , setPost , setUser , logUserID}) {
-  // const location = useLocation();
-  // const { state } = location;
   const [posts, setPosts] = useState([]);
-  // const [userID ,setUserID] = useState(state ? state.id : null);
   const notify = () => {
     toast.error('OK Delete post'
       , {
@@ -53,8 +50,6 @@ export default function Home({ users, auth, logOut , setPost , setUser , logUser
       console.error('Error deleting post:', error);
     }
   };
-  
-  console.log(logUserID);
   
   return (
     <div className='bg-slate-200'>
