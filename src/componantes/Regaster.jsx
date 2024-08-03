@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import UserNameIcon from './icon/UserNameIcon'
-import PasswordIcon from './icon/PasswordIcon'
 import { useNavigate } from 'react-router-dom';
 
 export default function Regaster({users , setUser}) {

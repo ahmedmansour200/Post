@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Route,  Routes } from 'react-router-dom'
 import Home from './componantes/Home'
@@ -70,7 +68,7 @@ function App() {
     <Route path='/regaster' element={<Regaster setUser={setUser}/>}/>
     <Route path='/edit' element={<EditPost 
      postId={editingPostId} onUpdate={handleUpdatePost}/>}/>
-    <Route path="/addpost" element={<AddPost logUserID={logUserID}
+    <Route path="/addpost" element={<AddPost userID={logUserID}
     onAdd={handleAddPost} />}></Route>
   </Routes>
     </>
