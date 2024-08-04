@@ -14,10 +14,6 @@ This project is a simple CRUD (Create, Read, Update, Delete) application for man
   - Edit Post
   - Delete Post
 
-## Demo
-
-![Demo](path-to-demo-screenshot)
-
 ## Technologies Used
 
 - React.js
@@ -35,4 +31,3 @@ Follow these instructions to get a copy of the project up and running on your lo
 
    ```bash
    git clone https://github.com/ahmedmansour200/Post.git
-   cd reactjs-posts
