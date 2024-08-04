@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import './App.css'
 import { Route,  Routes } from 'react-router-dom'
 import Home from './componantes/Home'
 import Login from './componantes/Login'
@@ -12,7 +11,6 @@ function App() {
   const [posts, setPosts] = useState([]);
   const [usersName, setUsersName] = useState({});
   const [users, setUsers] = useState({});
-  const [auth , setAuth] = useState(true);
   const [editingPostId, setEditingPostId] = useState(null);
   const [logUserID , setLogUserID] = useState('');
 
@@ -60,9 +58,9 @@ function App() {
   <ToastContainer />
   <Routes>
   <Route path="/" element={<Home  setUser={setUser} logOut={logOut} setPost={setEditingPostId}
-   posts={posts} users={usersName} auth={auth} logUserID={logUserID}/>}></Route>
+   posts={posts} users={usersName}  logUserID={logUserID}/>}></Route>
     <Route path="/login" element={<Login setUser={setUser} users={users}/>}></Route>
-    <Route path='/regaster' element={<Regaster setUser={setUser}/>}/>
+    <Route path='/register' element={<Regaster setUser={setUser} users={users}/>}/>
     <Route path='/edit' element={<EditPost 
      postId={editingPostId} onUpdate={handleUpdatePost}/>}/>
     <Route path="/addpost" element={<AddPost userID={logUserID}

@@ -1,20 +1,18 @@
-
 import Navbar from './Navbar'
 import CardPostUser from './CardPostUser'
 import CardPost from './CardPost'
-
 import PlusIcone from './icon/PlusIcone'
 import { Link} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { Bounce, toast } from 'react-toastify'
 
-export default function Home({ users, auth, logOut , setPost , setUser , logUserID}) {
+export default function Home({ users, logOut , setPost , setUser , logUserID}) {
   const [posts, setPosts] = useState([]);
   const notify = () => {
     toast.error('Delete post'
       , {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 1000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -32,14 +30,11 @@ export default function Home({ users, auth, logOut , setPost , setUser , logUser
 
   },[])
 
-
-
   const handleDeletePost = async (postId) => {
     try {
       const response = await fetch(`http://localhost:3000/posts/${postId}`, {
         method: 'DELETE'
       });
-
       if (response.ok) {
         notify()
         setPosts(posts.filter(post => post.id !== postId));
@@ -76,7 +71,7 @@ export default function Home({ users, auth, logOut , setPost , setUser , logUser
             />
         ))}
       </div>
-      { logUserID && auth ? <div>
+      { logUserID ? <div>
         <Link to='/addpost' onClick={() => {
           setUser(userID)
           } } className="btn btn-square fixed  bottom-4 right-4">
