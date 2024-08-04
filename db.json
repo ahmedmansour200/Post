@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "ahmedmansour",
+      "password": "ahmed1234"
+    },
+    {
+      "id": "2",
+      "username": "farisbasil",
+      "password": "ahmed1234"
+    },
+    {
+      "id": "3",
+      "username": "mohamedahmed",
+      "password": "ahmed1234"
+    },
+    {
+      "id": "9798",
+      "password": "ahmed1234",
+      "username": "ahmed"
+    },
+    {
+      "id": "b083",
+      "username": "ahmed200",
+      "password": "12345678"
+    }
+  ],
+  "posts": [
+    {
+      "title": "Movie Tit",
+      "description": "Click the button to watch on Jetflix. - Click the button to watch on Jetflix",
+      "imageUrl": "https://images.pexels.com/photos/103123/pexels-photo-103123.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "userID": "1",
+      "id": "4"
+    },
+    {
+      "title": "Movie Title",
+      "description": "Click the button to watch on Jetflix app. - Click the button to watch on Jetflix app.",
+      "imageUrl": "https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "userID": "3",
+      "id": "2"
+    },
+    {
+      "id": "2255",
+      "imageUrl": "https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "title": "Mountatins",
+      "description": "The ten highest mountains in the world are all part of the Himalayan and Karakoram ranges in Asia. ",
+      "userID": "1"
+    },
+    {
+      "id": "4501",
+      "imageUrl": "https://images.pexels.com/photos/3764579/pexels-photo-3764579.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "title": "Folwers",
+      "description": "Flowers are the reproductive structures of flowering plants (angiosperms),",
+      "userID": "2"
+    },
+    {
+      "title": "Art",
+      "description": "Art is a broad and diverse range of human activities .",
+      "imageUrl": "https://images.pexels.com/photos/542556/pexels-photo-542556.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "userID": "3",
+      "id": "5869"
+    },
+    {
+      "id": "c967",
+      "imageUrl": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "title": "Food",
+      "description": "Files placed in the public directory are served at the root path",
+      "userID": "9798"
+    },
+    {
+      "title": "work",
+      "description": "the work",
+      "imageUrl": "https://images.pexels.com/photos/341013/pexels-photo-341013.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "userID": "b083",
+      "id": "a3a9"
+    }
+  ]
+}
