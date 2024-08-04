@@ -17,33 +17,13 @@
     },
     {
       "id": "9798",
-      "password": "1234ahmed",
-      "username": "ahmed"
-    },
-    {
-      "id": "0852",
-      "username": "ahmed",
-      "password": "ahned1234"
-    },
-    {
-      "id": "d0ee",
-      "username": "ahmedm",
-      "password": "ahmed1234"
-    },
-    {
-      "id": "568e",
-      "username": "qssq",
-      "password": "1212"
-    },
-    {
-      "id": "6ed3",
       "password": "ahmed1234",
       "username": "ahmed"
     },
     {
-      "id": "7a19",
-      "password": "ahmed1234",
-      "username": "ahmed"
+      "id": "b083",
+      "username": "ahmed200",
+      "password": "12345678"
     }
   ],
   "posts": [
@@ -88,6 +68,13 @@
       "title": "Food",
       "description": "Files placed in the public directory are served at the root path",
       "userID": "9798"
+    },
+    {
+      "title": "work",
+      "description": "the work",
+      "imageUrl": "https://images.pexels.com/photos/341013/pexels-photo-341013.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "userID": "b083",
+      "id": "a3a9"
     }
   ]
 }

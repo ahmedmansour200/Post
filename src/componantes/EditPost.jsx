@@ -7,7 +7,7 @@ export default function EditPost({ postId,  onUpdate }) {
     toast.success('Edit Post'
       , {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 1000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,

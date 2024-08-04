@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Bounce, toast, ToastContainer } from 'react-toastify';
+import { Bounce, toast} from 'react-toastify';
 export default function AddPost({ onAdd , userID}) {
 
   const [imageUrl, setImageUrl] = useState('');
@@ -11,7 +11,7 @@ export default function AddPost({ onAdd , userID}) {
     toast.success('Add Post'
       , {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 1000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
